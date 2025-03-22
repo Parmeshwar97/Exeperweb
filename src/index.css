@@ -1,0 +1,11 @@
+@import "tailwindcss";
+html {
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+.active {
+  color: #60a5fa;
+  border: 1px solid #60a5fa;
+  border-radius: 6px;
+}
