@@ -1,12 +1,16 @@
 import Landing from "../Landing";
 import MainBody from "../MainBody";
 import Services from "../Services";
+import Testimonials from "../Testimonials";
 const Home = () => {
   return (
-    <div className="text-white bg-[#111827]">
+    <div className="text-white ">
       <Landing />
-      <MainBody />
-      <Services />
+      <div className="bg-[#0f172a]">
+        <MainBody />
+        <Services />
+        <Testimonials />
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <div className="flex flex-col w-full gap-28 py-12 pt-24 px-32">
+    <div className="flex flex-col w-full gap-28 py-24 px-32">
       <SectionHeading
         heading={"Some of our Services"}
         description={
