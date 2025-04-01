@@ -49,7 +49,7 @@ const OurSkills = () => {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className={`w-40 cursor-pointer hover:scale-105 transition-all h-36 border-2 rounded-xl justify-center flex flex-col items-center gap-5`}
+              className={`w-44 cursor-pointer hover:scale-105 transition-all h-36 border-2 rounded-xl justify-center flex flex-col items-center gap-5`}
               style={{ borderColor: skill.color }}
             >
               <div className="text-6xl">{<skill.logo />}</div>

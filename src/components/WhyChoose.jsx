@@ -28,7 +28,7 @@ const WhyChoose = () => {
             })}
         </div>
         <SectionHeading
-          heading={"Why Choose Exerweb Over Competitions ?"}
+          heading={"Why Choose Exeperweb Over Competitions ?"}
         />
         <div className="grid mt-16 grid-cols-[550px_550px] text-black gap-y-8 gap-x-40 justify-center">
           {reasons.map((reason) => (

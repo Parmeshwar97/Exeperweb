@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Landing from "../Landing";
 import MainBody from "../MainBody";
 import OurSkills from "../OurSkills";
@@ -14,7 +15,6 @@ const Home = () => {
         <Testimonials />
         <OurSkills />
         <WhyChoose />
-
       </div>
     </div>
   );
