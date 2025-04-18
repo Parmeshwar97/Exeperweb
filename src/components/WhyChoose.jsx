@@ -1,7 +1,7 @@
 import React from "react";
 import { reasons } from "../data/reasons";
 import { FaStar } from "react-icons/fa";
-import SectionHeading from "./SectionHeadnings";
+import SectionHeading from "./SectionHeadings";
 
 const WhyChoose = () => {
   return (
@@ -27,9 +27,7 @@ const WhyChoose = () => {
               );
             })}
         </div>
-        <SectionHeading
-          heading={"Why Choose Exeperweb Over Competitions ?"}
-        />
+        <SectionHeading heading={"Why Choose Exeperweb Over Competitions ?"} />
         <div className="grid mt-16 grid-cols-[550px_550px] text-black gap-y-8 gap-x-40 justify-center">
           {reasons.map((reason) => (
             <div

@@ -7,9 +7,9 @@ import Testimonials from "../Testimonials";
 import WhyChoose from "../WhyChoose";
 const Home = () => {
   return (
-    <div className="text-white ">
+    <div>
       <Landing />
-      <div className="bg-[#0f172a]">
+      <div>
         <MainBody />
         <Services />
         <Testimonials />

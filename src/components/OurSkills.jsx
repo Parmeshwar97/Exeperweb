@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import SectionHeading from "./SectionHeadnings";
+import SectionHeading from "./SectionHeadings";
 import { skills } from "../data/skills";
 
 const OurSkills = () => {

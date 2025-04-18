@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 const Header = () => {
   return (
-    <div className="fixed z-20 w-full text-white h-20 inset-0 backdrop-blur-xs top-0 flex justify-around items-center">
+    <div className="fixed z-20 w-full h-20 inset-0 backdrop-blur-xs top-0 flex justify-around items-center">
       <Link to="/">
         <img src={logo} alt="logo" className="w-[11rem]" />
       </Link>

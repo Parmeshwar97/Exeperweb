@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SectionHeading from "./SectionHeadnings";
+import SectionHeading from "./SectionHeadings";
 import { FaStar } from "react-icons/fa";
 import { reviews } from "../data/reviews";
 import TestimonialsCard from "./TestimonialsCard";
@@ -12,8 +12,8 @@ const Testimonials = () => {
   const [start, setStart] = useState(0);
   const isDisable = start === 0 ? true : false;
   const length = reviews.length;
-  console.log(start,length);
-  
+  console.log(start, length);
+
   return (
     <div
       className="flex flex-col w-full gap-28 py-24 border-y-2 border-[#6B92F9]"

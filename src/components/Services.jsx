@@ -1,5 +1,5 @@
 import { services } from "../data/serviceData";
-import SectionHeading from "./SectionHeadnings";
+import SectionHeading from "./SectionHeadings";
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
