@@ -1,12 +1,12 @@
 import { useState } from "react";
 import SectionHeading from "./SectionHeadings";
-import { FaStar } from "react-icons/fa";
 import { reviews } from "../data/reviews";
 import TestimonialsCard from "./TestimonialsCard";
 import {
   MdOutlineArrowBackIos,
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
+import Stars from "./Stars";
 
 const Testimonials = () => {
   const [start, setStart] = useState(0);
@@ -20,23 +20,7 @@ const Testimonials = () => {
       style={{ fontFamily: "'Segoe UI'" }}
     >
       <div className="align-center justify-center flex flex-col text-center w-full">
-        <div className="flex self-center mb-10 w-fit gap-3">
-          {Array(3)
-            .fill()
-            .map((_, i) => {
-              if (i === 1) {
-                return <FaStar key={i} color="#EAB308" fontSize={"3rem"} />;
-              }
-              return (
-                <FaStar
-                  key={i}
-                  color="#9CA3AF"
-                  fontSize={"2rem"}
-                  className="self-end"
-                />
-              );
-            })}
-        </div>
+        <Stars />
         <SectionHeading
           heading={"Testimonials"}
           description={"Customer 💝 Us"}

@@ -3,27 +3,13 @@ import { FaStar } from "react-icons/fa6";
 import Qualities from "./Qualities";
 import { qualities } from "../../../data/about";
 import gif from "../../../assets/about/coding_pic.gif";
+import Stars from "../../Stars";
 const WhyWe = () => {
   return (
     <div className="flex gap-20 pl-20 justify-end mt-24">
       <div className="w-7/12 ">
-        <div className="flex justify-self-center w-fit gap-2">
-          {Array(3)
-            .fill()
-            .map((_, i) => {
-              if (i === 1) {
-                return <FaStar key={i} color="#EAB308" fontSize={"2rem"} />;
-              }
-              return (
-                <FaStar
-                  key={i}
-                  color="#9CA3AF"
-                  fontSize={"1.4rem"}
-                  className="self-end"
-                />
-              );
-            })}
-        </div>
+      
+        <Stars starSize={"2rem"} smallStar={'1.4rem'} starGap={"8px"} />
         <div className="flex items-center mt-4 justify-self-center gap-3">
           <div className="w-28 h-1 rounded-md bg-blue-400"></div>
           <span className="text-center">WHY CHOOSE US</span>

@@ -4,7 +4,7 @@ import MainBody from "../MainBody";
 import OurSkills from "../OurSkills";
 import Services from "../Services";
 import Testimonials from "../Testimonials";
-import WhyChoose from "../WhyChoose";
+import WhyChoose from "../WhyChooseUs";
 const Home = () => {
   return (
     <div>

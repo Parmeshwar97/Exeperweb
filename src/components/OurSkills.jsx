@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import SectionHeading from "./SectionHeadings";
 import { skills } from "../data/skills";
+import Stars from "./Stars";
 
 const OurSkills = () => {
   return (
@@ -9,23 +10,7 @@ const OurSkills = () => {
       style={{ fontFamily: "'Segoe UI'" }}
     >
       <div className="align-center justify-center flex flex-col text-center w-full">
-        <div className="flex self-center mb-10 w-fit gap-3">
-          {Array(3)
-            .fill()
-            .map((_, i) => {
-              if (i === 1) {
-                return <FaStar key={i} color="#EAB308" fontSize={"3rem"} />;
-              }
-              return (
-                <FaStar
-                  key={i}
-                  color="#9CA3AF"
-                  fontSize={"2rem"}
-                  className="self-end"
-                />
-              );
-            })}
-        </div>
+        <Stars/>
         <SectionHeading heading={"Our Skills"} />
       </div>
 

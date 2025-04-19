@@ -2,31 +2,16 @@ import React from "react";
 import { reasons } from "../data/reasons";
 import { FaStar } from "react-icons/fa";
 import SectionHeading from "./SectionHeadings";
+import Stars from "./Stars";
 
-const WhyChoose = () => {
+const WhyChooseUs = () => {
   return (
     <div
       className="flex flex-col w-full gap-28 py-24 border-y-2 border-[#6B92F9]"
       style={{ fontFamily: "'Segoe UI'" }}
     >
       <div className="align-center justify-center flex flex-col text-center w-full">
-        <div className="flex self-center mb-10 w-fit gap-3">
-          {Array(3)
-            .fill()
-            .map((_, i) => {
-              if (i === 1) {
-                return <FaStar key={i} color="#EAB308" fontSize={"3rem"} />;
-              }
-              return (
-                <FaStar
-                  key={i}
-                  color="#9CA3AF"
-                  fontSize={"2rem"}
-                  className="self-end"
-                />
-              );
-            })}
-        </div>
+        <Stars/>
         <SectionHeading heading={"Why Choose Exeperweb Over Competitions ?"} />
         <div className="grid mt-16 grid-cols-[550px_550px] text-black gap-y-8 gap-x-40 justify-center">
           {reasons.map((reason) => (
@@ -46,4 +31,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default WhyChooseUs;
