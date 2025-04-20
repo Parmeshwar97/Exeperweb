@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import AppLayout from "./AppLayout";
 import Services from "./pages/Services";
-
+import Portfolio from "./pages/Portfolio";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio />,
       },
     ],
   },
