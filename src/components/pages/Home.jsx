@@ -7,7 +7,7 @@ import Testimonials from "../Testimonials";
 import WhyChoose from "../WhyChooseUs";
 const Home = () => {
   return (
-    <div>
+    <div className="relative">
       <Landing />
       <div>
         <MainBody />

@@ -5,11 +5,11 @@ import GetStarted from "./services/GetStarted";
 
 const Portfolio = () => {
   return (
-    <div>
+    <div style={{fontFamily:'Segoe UI'}}>
       <div className="pt-32 flex  flex-col items-center">
         <p className="text-lg font-semibold tracking-wide">Our Portfolio</p>
-        <h2 className="font-bold text-4xl my-3">Our Completed Projects</h2>
-        <p className="w-[600px] text-center">
+        <h2 className="font-bold text-4xl my-2">Our Completed Projects</h2>
+        <p className="w-[600px] mt-1 text-center">
           There are many variations of passages of Lorem Ipsum available but the
           majority have suffered alteration in some form.
         </p>

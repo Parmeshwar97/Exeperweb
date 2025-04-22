@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 const Header = () => {
   return (
-    <div className="fixed z-20 w-full h-20 inset-0 backdrop-blur-xs top-0 flex justify-around items-center">
+    <div className="fixed z-10 w-full h-20 inset-0 backdrop-blur-xs top-0 flex justify-around items-center">
       <Link to="/">
         <img src={logo} alt="logo" className="w-[11rem]" />
       </Link>
@@ -21,9 +21,9 @@ const Header = () => {
           <NavLink to="/portfolio" className="px-1.5 py-2 hover:text-[#60a5fa]">
             Portfolio
           </NavLink>
-          <NavLink to="/blog">
+          {/* <NavLink to="/blog">
             <li className="px-1.5 py-2 hover:text-[#60a5fa]">Blog</li>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/contact">
             <li className="px-1.5 py-2 hover:text-[#60a5fa]">Contact</li>
           </NavLink>

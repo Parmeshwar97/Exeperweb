@@ -44,19 +44,19 @@ export const reviews = [
       "I can’t thank Exeper Web enough for their outstanding service. They listened to our needs, provided valuable insights, and delivered exceptional results.",
   },
   {
-    profile: profile1,
+    profile: profile2,
     name: "James Brown",
     review:
       "Exeper Web’s team is responsive, knowledgeable, and dedicated. Our project was handled with professionalism from start to finish.",
   },
   {
-    profile: profile2,
+    profile: profile6,
     name: "Olivia Martinez",
     review:
       "Thanks to Exeper Web, our online presence has never been stronger. They created a beautiful, user-friendly website that perfectly represents our brand.",
   },
   {
-    profile: profile3,
+    profile: profile4,
     name: "Liam Garcia",
     review:
       "Exeper Web made the web development process easy and stress-free. Their proactive communication and expert guidance were invaluable.",
