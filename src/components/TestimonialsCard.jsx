@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 const TestimonialsCard = ({ data }) => {
   const { profile, name, review } = data;
   return (
-    <div className="bg-[#4B5563] h-[380px] flex relative flex-col w-80 rounded-lg p-5">
+    <div className="bg-[#4B5563] h-[380px] flex relative flex-col md:w-80 rounded-lg p-5">
       <div className="flex justify-between items-center">
         <ImQuotesLeft fontSize={"2.5rem"} color="#D1D5DB" />
         <div className="flex gap-0.5">
@@ -15,7 +15,7 @@ const TestimonialsCard = ({ data }) => {
         </div>
       </div>
 
-      <div className="p-6">
+      <div className="p-3 md:p-6">
         <h3 className="text-[#46A5DC] font-semibold text-lg mb-4">{name}</h3>
         <p className="text-sm/7 font-light break-words hyphens-auto">
           <i>{review}</i>

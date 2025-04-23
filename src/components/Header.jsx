@@ -1,13 +1,18 @@
 import { BsFillSunFill } from "react-icons/bs";
-import { NavLink, Link } from "react-router-dom";
+import { MdOutlineMenu } from "react-icons/md";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { useState } from "react";
+import Menu from "./Menu";
+
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="fixed z-10 w-full h-20 inset-0 backdrop-blur-xs top-0 flex justify-around items-center">
+    <div className="fixed z-10 px-5 md:px-28 h-15 md:h-20 inset-0 backdrop-blur-xs top-0 justify-between items-center flex">
       <Link to="/">
         <img src={logo} alt="logo" className="w-[11rem]" />
       </Link>
-      <nav>
+      <nav className="md:flex hidden ">
         <ul className="flex gap-5 list-none">
           <NavLink to="/">
             <li className="px-1.5 py-2 hover:text-[#60a5fa]">Home</li>
@@ -29,9 +34,20 @@ const Header = () => {
           </NavLink>
         </ul>
       </nav>
-      <button>
-        <BsFillSunFill className="text-3xl text-white" />
-      </button>
+      <div className="flex gap-4">
+        <button>
+          <BsFillSunFill className="text-3xl text-white" />
+        </button>
+        <button className="flex md:hidden" onClick={() => setShowMenu(true)}>
+          <MdOutlineMenu className="text-3xl text-white" />
+        </button>
+      </div>
+      {showMenu && (
+        <div className="w-full flex bg-[rgba(0,0,0,0.3)] top-0 left-0 -z-10 absolute h-dvh">
+          {" "}
+        </div>
+      )}
+      <Menu setShowMenu={setShowMenu} menu={showMenu} />
     </div>
   );
 };

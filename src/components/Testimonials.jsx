@@ -23,10 +23,10 @@ const Testimonials = () => {
         <Stars />
         <SectionHeading
           heading={"Testimonials"}
-          description={"Customer 💝 Us"}
+          description={"Customers 💝 Us"}
         />
       </div>
-      <div className="flex justify-between px-10">
+      <div className="flex justify-between md:px-10">
         <button
           disabled={start === 0}
           onClick={() => setStart((prevStart) => prevStart - 3)}
@@ -35,7 +35,7 @@ const Testimonials = () => {
           <MdOutlineArrowBackIos className="text-3xl " />
         </button>
 
-        <div className="flex w-fit gap-30 justify-center transition-all duration-500">
+        <div className="flex w-fit flex-wrap gap-30 justify-center transition-all duration-500">
           {reviews.slice(start, start + 3).map((review, i) => (
             <TestimonialsCard key={i} data={review} />
           ))}

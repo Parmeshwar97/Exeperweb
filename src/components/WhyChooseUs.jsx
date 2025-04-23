@@ -7,13 +7,13 @@ import Stars from "./Stars";
 const WhyChooseUs = () => {
   return (
     <div
-      className="flex flex-col w-full gap-28 py-24 border-y-2 border-[#6B92F9]"
+      className="flex flex-col w-full gap-28 px-8 py-15 md:py-24 border-y-2 border-[#6B92F9]"
       style={{ fontFamily: "'Segoe UI'" }}
     >
       <div className="align-center justify-center flex flex-col text-center w-full">
         <Stars/>
         <SectionHeading heading={"Why Choose Exeperweb Over Competitions ?"} />
-        <div className="grid mt-16 grid-cols-[550px_550px] text-black gap-y-8 gap-x-40 justify-center">
+        <div className="grid mt-16  md:grid-cols-[550px_550px] text-black gap-y-8 gap-x-40 justify-center">
           {reasons.map((reason) => (
             <div
               className={`cursor-pointer hover:-translate-y-3 transition-all border-2 rounded-xl justify-center flex flex-col p-4 items-center gap-5 bg-[#F3F4F6]`}
