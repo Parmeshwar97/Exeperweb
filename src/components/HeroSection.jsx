@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 
 const HeroSection = () => {
   return (
-    <div className="md:w-1/3 pt-28 px-8 pe-0 md:ps-10" style={{ fontFamily: "'Segoe UI'" }}>
+    <div className="md:w-1/3 pt-28 px-8 md:pe-0 md:ps-10" style={{ fontFamily: "'Segoe UI'" }}>
       <div
         className="text-[#4CA2DB] text-6xl md:text-8xl font-bold"
        
@@ -23,7 +23,7 @@ const HeroSection = () => {
         solutions, wee can ensure you that wee will take your Business to the
         next level, so hang in tight and lets Explore with Exeper web!
       </p>
-      <div className="flex gap-5 pt-7">
+      <div className="flex gap-5 pt-10">
         <button className="px-9 py-4 rounded-md  bg-[#60A5FA]">
           Get Started
         </button>

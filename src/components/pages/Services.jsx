@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className="pt-32 flex flex-col items-center">
       <Stars starSize={"2rem"} smallStar={"1.4rem"} starGap={"8px"} />
-      <h2 className="text-4xl font-semibold">Our Web Development Services</h2>
+      <h2 className="md:text-4xl text-3xl text-center font-semibold">Our Web Development Services</h2>
       <div className="h-1 w-32 mt-5 bg-blue-400 rounded-2xl"></div>
 
       <div className="flex gap-10 flex-wrap p-10">

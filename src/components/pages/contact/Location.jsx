@@ -3,7 +3,7 @@ import React from "react";
 const Location = () => {
   return (
     <div style={{fontFamily:'Segoe UI'}} className="py-10 pb-20 " >
-      <h2 className="text-[2.5rem] font-semibold text-[#5CD301] pb-8 text-center">
+      <h2 className="md:text-[2.5rem] text-2xl font-semibold text-[#5CD301] pb-8 text-center">
         WHERE WE ARE LOCATED?
       </h2>
       {/*Google Maps embed API*/}

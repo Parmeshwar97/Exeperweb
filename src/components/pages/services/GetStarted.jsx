@@ -2,14 +2,14 @@ const GetStarted = ({ backColor = "#11A4A4" }) => {
   return (
     <div className="py-20 w-full border-y-2 border-blue-400">
       <div
-        className="flex p-20 w-full justify-between "
+        className="flex flex-wrap md:flex-nowrap p-10 md:p-20 w-full justify-between "
         style={{ backgroundColor: backColor }}
       >
-        <div className="w-1/2">
+        <div className="md:w-1/2 mb-8">
           <p className="text-md font-semibold opacity-95 mb-1">
             Find the perfect team to realize your business Goal!
           </p>
-          <p className="text-4xl font-bold">
+          <p className="text-3xl md:text-4xl font-bold">
             Get started Today and let us Take Care of the{" "}
             <span className="text-5xl bg-gradient-to-r from-blue-400 to-emerald-400 text-transparent bg-clip-text w-fit">
               Rest!

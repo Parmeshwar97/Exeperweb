@@ -11,7 +11,7 @@ const Menu = ({ setShowMenu, menu }) => {
       >
         <div className="flex transition-all duration-300  items-center py-8 gap-10">
           <Link to="/">
-            <img src={logo} alt="logo" className="" />
+            <img src={logo} alt="logo" />
           </Link>
           <button onClick={() => setShowMenu(false)} className="h-fit">
             <IoMdClose size={"25"} />

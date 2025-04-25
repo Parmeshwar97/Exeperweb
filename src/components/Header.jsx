@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="fixed z-10 px-5 md:px-28 h-15 md:h-20 inset-0 backdrop-blur-xs top-0 justify-between items-center flex">
       <Link to="/">
-        <img src={logo} alt="logo" className="w-[11rem]" />
+        <img src={logo} alt="logo" className="w-[150px] md:w-[11rem]" />
       </Link>
       <nav className="md:flex hidden ">
         <ul className="flex gap-5 list-none">
@@ -39,7 +39,7 @@ const Header = () => {
           <BsFillSunFill className="text-3xl text-white" />
         </button>
         <button className="flex md:hidden" onClick={() => setShowMenu(true)}>
-          <MdOutlineMenu className="text-3xl text-white" />
+          <MdOutlineMenu className="text-4xl text-white" />
         </button>
       </div>
       {showMenu && (

@@ -8,8 +8,8 @@ import GetStarted from "./services/GetStarted";
 const Contact = () => {
   return (
     <div>
-      <div className="p-30 flex items-center justify-between border-b-2 border-blue-400">
-        <div className="flex flex-col w-[550px] gap-5">
+      <div className="md:p-30 py-20 flex flex-wrap items-center justify-between border-b-2 border-blue-400">
+        <div className="flex p-8 flex-col w-[550px] gap-5">
           <h3 className="font-bold text-green-500">Contact Us</h3>
           <h2 className="text-[2.5rem] font-semibold ">GET IN TOUCH WITH US</h2>
           <p className="text-[#9CA3AF] text-justify">
@@ -18,15 +18,15 @@ const Contact = () => {
             your online presence and achieve your digital objectives. Please
             feel free to reach out to us through any of the following channels.
           </p>
-          <div className="flex flex-col gap-8">
+          <div className="flex mt-5 flex-col gap-8">
             {channels.map((channel) => (
               <Channel key={channel.id} data={channel} />
             ))}
           </div>
         </div>
-        <div className="z-10 relative">
-          <div className="p-10 z-10 bg-white rounded-md text-black ">
-            <form action="" className=" flex gap-3 w-[470px] gap-y-5 flex-wrap">
+        <div className="z-10 pt-14 mx-auto md:mx-0 relative">
+          <div className="md:p-10 p-8 z-10 bg-white rounded-md text-black ">
+            <form className="grid grid-cols-2 w-[300px] gap-3 md:w-[470px] gap-y-5">
               <input
                 type="text"
                 placeholder="Enter Name"
@@ -45,11 +45,11 @@ const Contact = () => {
               <input
                 type="number"
                 placeholder="Enter Phone"
-                className="border-1  border-[#E5E7EB] rounded p-3"
+                className="border-1  border-[#E5E7EB]  rounded p-3"
               />
               <select
                 name="service"
-                className="w-full border-1 border-[#E5E7EB]  rounded p-3"
+                className="w-full border-1 border-[#E5E7EB] col-span-2 rounded p-3"
               >
                 <option value="" disabled>
                   Select a service{" "}
@@ -67,21 +67,21 @@ const Contact = () => {
                 name="message"
                 placeholder="Your Message"
                 rows={"3"}
-                className="p-4 w-full rounded-md border-1 border-[#E5E7EB]"
+                className="p-4 w-full rounded-md col-span-2 border-1 border-[#E5E7EB]"
                 style={{ resize: "none" }}
               ></textarea>
-              <button className="bg-blue-600 text-white w-full rounded py-3">
+              <button className="bg-blue-600 col-span-2 text-white w-full rounded py-3">
                 Sent Message
               </button>
             </form>
           </div>
-          <div className="absolute -z-10 -top-12 -right-10">
+          <div className="absolute hidden md:block -z-10 -top-12 -right-10">
             <img src={bluePic} alt="dots" />
           </div>
-          <div className="absolute  top-20 -right-10">
+          <div className="absolute  hidden md:block top-20 -right-10">
             <img src={rightDots} alt="dots" />
           </div>
-          <div className="absolute -bottom-7 -z-10 -left-7">
+          <div className="absolute hidden md:block -bottom-7 -z-10 -left-7">
             <img src={leftDots} alt="dots" />
           </div>
         </div>

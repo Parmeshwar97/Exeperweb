@@ -2,7 +2,7 @@ const DevelopmentCard = ({ data }) => {
   const { service, desc, Icon } = data;
   return (
     <div
-      className="flex flex-col bg-[#F6F7F9] text-center rounded-lg text-black w-[450px] h-[350px] p-5 hover:-translate-y-3 transition-all "
+      className="flex flex-col bg-[#F6F7F9] text-center rounded-lg text-black md:w-[450px] md:h-[350px] p-5 hover:-translate-y-3 transition-all "
       style={{ fontFamily: "Segoe UI" }}
     >
       <div className="self-center bg-[#3B82F6] rounded-full p-4 mb-5">
